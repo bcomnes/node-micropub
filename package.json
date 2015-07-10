@@ -7,7 +7,8 @@
     "url": "https://github.com/bcomnes/micropub/issues"
   },
   "dependencies": {
-    "body": "^5.0.0",
+    "auth-header": "^0.2.2",
+    "body": "^5.1.0",
     "ecstatic": "^0.8.0",
     "he": "^0.5.0",
     "is-root": "^1.0.0",

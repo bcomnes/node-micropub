@@ -15,10 +15,12 @@ var encode = require('he').encode
 var router = require('routes')()
 
 var server = http.createServer(function (req, res) {
+  console.log(req.headers)
   var m = router.match(req.url)
   if (m) m.fn(req, res, m.params)
   else ecstatic(req, res)
 })
+
 server.listen({ fd: fd }, function () {
   console.log('listening on :' + server.address().port)
 })
